@@ -16,6 +16,9 @@ cask "lumiere" do
     system_command "codesign",
                     args: ["--force", "--deep", "--sign", "-", File.join(ENV["HOME"], "../../Applications/Lumiere.app")],
                     sudo: false
+    system_command: "xattr",
+                    args: ["-d", "com.apple.quarantine", File.join(ENV["HOME"], "../../Applications/Lumiere.app")],
+                    sudo: false
   end
 
   depends_on macos: ">= :catalina"
