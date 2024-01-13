@@ -12,6 +12,10 @@ cask "lumiere" do
     strategy :electron_builder
   end
 
+  postflight do
+    system_command 'codesign --force --deep --sign - /Applications/Lumiere.app'
+  end
+
   depends_on macos: ">= :catalina"
 
   app "Lumiere.app"
