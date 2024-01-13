@@ -1,5 +1,5 @@
 cask "lumiere" do
-  version "1.0.0"
+  version "1.0.1"
   sha256 "906fb465e6719b5ba43f1aee6fc916bf4e57489eb1677b4897cc90fac65cb913"
 
   url "https://lumiere.pinig.in/files/lumiere-#{version}.dmg"
