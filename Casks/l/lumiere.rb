@@ -13,7 +13,9 @@ cask "lumiere" do
   end
 
   postflight do
-    system_command 'sudo codesign --force --deep --sign - /Applications/Lumiere.app'
+    system_command "codesign",
+                    args: ["--force", "--deep", "--sign", "-", File.join(ENV["HOME"], "../../Applications/Lumiere.app")],
+                    sudo: false
   end
 
   depends_on macos: ">= :catalina"
