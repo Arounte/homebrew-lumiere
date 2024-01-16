@@ -1,4 +1,4 @@
-cask "lumiere" do
+# cask "lumiere" do
   version "1.0.1"
   sha256 "8bb52cd44629a51de591e2364598dc8a30890b53eb677cba08bf5d8b02ad44ca"
 
