@@ -1,6 +1,6 @@
 cask "lumiere" do
-  version "0.5.1"
-  sha256 "0daf1006b218cdf1390b02247e4b8ee01b9f3455e97210ec565c510202c48f48"
+  version "0.5.0"
+  sha256 "12826126340796943e8a02e1c2aae23043063525b37d6ddaa49014ae64f5a064"
 
   url "https://github.com/Arounte/lumiere-releases/releases/download/v#{version}/lumiere-#{version}.dmg"
   name "lumiere"
