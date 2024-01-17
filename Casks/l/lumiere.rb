@@ -1,14 +1,14 @@
-# cask "lumiere" do
-  version "1.0.1"
-  sha256 "8bb52cd44629a51de591e2364598dc8a30890b53eb677cba08bf5d8b02ad44ca"
+cask "lumiere" do
+  version "1.0.0"
+  sha256 "25481cdc3ada62e464db6f0894f7c0a787770e524e4437bb4e93fb84adfc78c5"
 
-  url "https://lumiere.pinig.in/files/lumiere-#{version}.dmg"
+  url "https://github.com/Arounte/lumiere-releases/releases/download/v#{version}/lumiere-#{version}.dmg"
   name "lumiere"
   desc "Free cinema app designed with Electron"
-  homepage "https://lumiere.pinig.in"
+  homepage "https://github.com/Arounte/lumiere-releases"
 
   livecheck do
-    url "https://lumiere.pinig.in/files/latest-mac.yml"
+    url "https://github.com/Arounte/lumiere-releases/releases/download/v#{version}/lumiere-#{version}.dmg"
     strategy :electron_builder
   end
 
