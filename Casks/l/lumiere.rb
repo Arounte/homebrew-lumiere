@@ -1,6 +1,6 @@
 cask "lumiere" do
-  version "1.0.1"
-  sha256 "2640f29e144f8545957012d7c75a364e0830b71cfd9a78f529ba748cf6cb1225"
+  version "0.5.0"
+  sha256 "ca41b1824aaa101e067378b411f490dbccf75b7047ed8d13c9cf40ebf28379b1"
 
   url "https://github.com/Arounte/lumiere-releases/releases/download/v#{version}/lumiere-#{version}.dmg"
   name "lumiere"
@@ -8,7 +8,7 @@ cask "lumiere" do
   homepage "https://github.com/Arounte/lumiere-releases"
 
   livecheck do
-    url "https://github.com/Arounte/lumiere-releases/releases/download/v#{version}/lumiere-#{version}.dmg"
+    url "https://github.com/Arounte/lumiere-releases/releases/download/v#{version}/latest-mac.yml"
     strategy :electron_builder
   end
 
